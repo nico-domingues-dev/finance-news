@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		845BA4B52DFC8E8B00358071 /* FinanceNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = 845BA4B42DFC8E8B00358071 /* FinanceNetwork */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		846306C92DFC6C2F00F26368 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -25,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		845BA4B12DFC6E0800358071 /* finance-network */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "finance-network"; path = "../Modules/finance-network"; sourceTree = SOURCE_ROOT; };
+		845BA4B22DFC8E7500358071 /* FinanceNewsApp.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = FinanceNewsApp.xctestplan; sourceTree = "<group>"; };
 		846306AF2DFC6C2C00F26368 /* FinanceNewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinanceNewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		846306C82DFC6C2F00F26368 /* FinanceNewsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinanceNewsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		846306D22DFC6C2F00F26368 /* FinanceNewsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinanceNewsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845BA4B52DFC8E8B00358071 /* FinanceNetwork in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,13 +92,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		845BA4B32DFC8E8B00358071 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		846306A62DFC6C2C00F26368 = {
 			isa = PBXGroup;
 			children = (
+				845BA4B22DFC8E7500358071 /* FinanceNewsApp.xctestplan */,
 				845BA4B12DFC6E0800358071 /* finance-network */,
 				846306B12DFC6C2C00F26368 /* FinanceNewsApp */,
 				846306CB2DFC6C2F00F26368 /* FinanceNewsAppTests */,
 				846306D52DFC6C2F00F26368 /* FinanceNewsAppUITests */,
+				845BA4B32DFC8E8B00358071 /* Frameworks */,
 				846306B02DFC6C2C00F26368 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -127,6 +142,7 @@
 			);
 			name = FinanceNewsApp;
 			packageProductDependencies = (
+				845BA4B42DFC8E8B00358071 /* FinanceNetwork */,
 			);
 			productName = FinanceNewsApp;
 			productReference = 846306AF2DFC6C2C00F26368 /* FinanceNewsApp.app */;
@@ -571,6 +587,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		845BA4B42DFC8E8B00358071 /* FinanceNetwork */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FinanceNetwork;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 846306A72DFC6C2C00F26368 /* Project object */;
 }
