@@ -1,0 +1,44 @@
+{
+  "configurations" : [
+    {
+      "id" : "BF453622-F945-43B5-9348-B4C06146F8FC",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:FinanceNewsApp.xcodeproj",
+      "identifier" : "846306AE2DFC6C2C00F26368",
+      "name" : "FinanceNewsApp"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:..\/Modules\/finance-network",
+        "identifier" : "FinanceNetworkTests",
+        "name" : "FinanceNetworkTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:FinanceNewsApp.xcodeproj",
+        "identifier" : "846306D12DFC6C2F00F26368",
+        "name" : "FinanceNewsAppUITests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:FinanceNewsApp.xcodeproj",
+        "identifier" : "846306C72DFC6C2F00F26368",
+        "name" : "FinanceNewsAppTests"
+      }
+    }
+  ],
+  "version" : 1
+}

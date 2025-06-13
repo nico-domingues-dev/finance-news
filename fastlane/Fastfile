@@ -1,0 +1,22 @@
+default_platform(:ios)
+
+platform :ios do
+  desc "Run unit tests"
+  lane :test do
+    scan(
+      project: "./FinanceNewsApp/FinanceNewsApp.xcodeproj",
+      scheme: "FinanceNewsApp",
+      clean: true,
+      code_coverage: true
+    )
+    slather(
+      proj: "./FinanceNewsApp/FinanceNewsApp.xcodeproj",
+      scheme: "FinanceNewsApp",
+      output_directory: "fastlane/coverage",
+      github: true,
+      cobertura_xml: true,
+      ignore: ["Pods", "Tests", "**/Generated/**"]
+    )
+  end
+end
+
