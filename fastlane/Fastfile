@@ -7,6 +7,7 @@ platform :ios do
       project: "./FinanceNewsApp/FinanceNewsApp.xcodeproj",
       scheme: "FinanceNewsApp",
       clean: true,
+      xcodebuild_formatter: "xcpretty",
       code_coverage: true
     )
     slather(
@@ -15,7 +16,9 @@ platform :ios do
       output_directory: "fastlane/coverage",
       github: true,
       cobertura_xml: true,
-      ignore: ["Pods", "Tests", "**/Generated/**"]
+      source_directory: "./FinanceNewsApp",
+      ignore: ["Pods", "Tests", ".*GeneratedAssetSymbols.swift"],
+      verbose: true
     )
   end
 end

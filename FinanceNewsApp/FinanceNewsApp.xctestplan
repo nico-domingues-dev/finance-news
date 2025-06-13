@@ -17,8 +17,16 @@
   },
   "testTargets" : [
     {
+      "parallelizable" : true,
       "target" : {
-        "containerPath" : "container:..\/Modules\/finance-network",
+        "containerPath" : "container:FinanceNewsApp.xcodeproj",
+        "identifier" : "846306C72DFC6C2F00F26368",
+        "name" : "FinanceNewsAppTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Modules\/finance-network",
         "identifier" : "FinanceNetworkTests",
         "name" : "FinanceNetworkTests"
       }
@@ -29,14 +37,6 @@
         "containerPath" : "container:FinanceNewsApp.xcodeproj",
         "identifier" : "846306D12DFC6C2F00F26368",
         "name" : "FinanceNewsAppUITests"
-      }
-    },
-    {
-      "parallelizable" : true,
-      "target" : {
-        "containerPath" : "container:FinanceNewsApp.xcodeproj",
-        "identifier" : "846306C72DFC6C2F00F26368",
-        "name" : "FinanceNewsAppTests"
       }
     }
   ],
