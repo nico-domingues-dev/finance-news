@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		845BA4B12DFC6E0800358071 /* finance-network */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "finance-network"; path = "../Modules/finance-network"; sourceTree = SOURCE_ROOT; };
+		845BA4B12DFC6E0800358071 /* finance-network */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "finance-network"; path = "Modules/finance-network"; sourceTree = SOURCE_ROOT; };
 		845BA4B22DFC8E7500358071 /* FinanceNewsApp.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = FinanceNewsApp.xctestplan; sourceTree = "<group>"; };
 		846306AF2DFC6C2C00F26368 /* FinanceNewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinanceNewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		846306C82DFC6C2F00F26368 /* FinanceNewsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinanceNewsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };

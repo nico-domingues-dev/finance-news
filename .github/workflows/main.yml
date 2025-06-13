@@ -1,1 +1,44 @@
+# .github/workflows/main.yml
+name: Tests
 
+on:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: macos-15
+    permissions:
+      actions: read
+      contents: read
+      packages: read
+      pull-requests: write
+      checks: write
+      issues: write
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2' # adjust if needed
+          
+      - name: Setup Xcode 16
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: '16'
+
+      - name: Install dependencies
+        run: bundle install
+
+      - name: Run tests and generate coverage
+        run: bundle exec fastlane test
+
+      - name: Report coverage to PR
+        uses: 5monkeys/cobertura-action@v13
+        with:
+          path: fastlane/coverage/cobertura.xml
+          minimum_coverage: 80
+          skip_covered: false
+          fail_below_threshold: true
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
