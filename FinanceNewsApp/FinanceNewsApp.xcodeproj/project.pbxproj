@@ -92,6 +92,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		844C1DA02DFCD452002143B6 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
 		845BA4B32DFC8E8B00358071 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +116,7 @@
 				846306D52DFC6C2F00F26368 /* FinanceNewsAppUITests */,
 				845BA4B32DFC8E8B00358071 /* Frameworks */,
 				846306B02DFC6C2C00F26368 /* Products */,
+				844C1DA02DFCD452002143B6 /* Configurations */,
 			);
 			sourceTree = "<group>";
 		};
@@ -356,6 +364,8 @@
 		};
 		846306DE2DFC6C2F00F26368 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 846306B12DFC6C2C00F26368 /* FinanceNewsApp */;
+			baseConfigurationReferenceRelativePath = Configurations/Debug.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -420,6 +430,8 @@
 		};
 		846306DF2DFC6C2F00F26368 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 846306B12DFC6C2C00F26368 /* FinanceNewsApp */;
+			baseConfigurationReferenceRelativePath = Configurations/Release.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
