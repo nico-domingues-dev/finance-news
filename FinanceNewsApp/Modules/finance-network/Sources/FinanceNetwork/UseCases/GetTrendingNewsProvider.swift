@@ -2,7 +2,7 @@ import Combine
 import Foundation
 
 public protocol GetTrendingNewsProvider {
-  func getTrendingNews(_ since: Date?, until: Date?, limit: Int) -> AnyPublisher<[TrendingNew], Error>
+  func getTrendingNews(since: Date?, until: Date?, limit: Int) -> AnyPublisher<[TrendingNew], Error>
 }
 
 public final class GetTrendingNewsUseCase: GetTrendingNewsProvider {
@@ -20,7 +20,7 @@ public final class GetTrendingNewsUseCase: GetTrendingNewsProvider {
     self.decoder = decoder
   }
   
-  public func getTrendingNews(_ since: Date?, until: Date?, limit: Int) -> AnyPublisher<[TrendingNew], any Error> {
+  public func getTrendingNews(since: Date?, until: Date?, limit: Int) -> AnyPublisher<[TrendingNew], any Error> {
     do {
       let request = try TrendingNewsEndpoint(secretProvider: secretProvider, since: since, until: until, limit: limit).makeRequest()
       return networkSession.dataPublisher(for: request)

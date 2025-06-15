@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		845BA4B52DFC8E8B00358071 /* FinanceNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = 845BA4B42DFC8E8B00358071 /* FinanceNetwork */; };
+		841AF9912DFD676B00B0065A /* FinanceNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = 841AF9902DFD676B00B0065A /* FinanceNetwork */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				845BA4B52DFC8E8B00358071 /* FinanceNetwork in Frameworks */,
+				841AF9912DFD676B00B0065A /* FinanceNetwork in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,7 +150,7 @@
 			);
 			name = FinanceNewsApp;
 			packageProductDependencies = (
-				845BA4B42DFC8E8B00358071 /* FinanceNetwork */,
+				841AF9902DFD676B00B0065A /* FinanceNetwork */,
 			);
 			productName = FinanceNewsApp;
 			productReference = 846306AF2DFC6C2C00F26368 /* FinanceNewsApp.app */;
@@ -601,7 +601,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		845BA4B42DFC8E8B00358071 /* FinanceNetwork */ = {
+		841AF9902DFD676B00B0065A /* FinanceNetwork */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = FinanceNetwork;
 		};
