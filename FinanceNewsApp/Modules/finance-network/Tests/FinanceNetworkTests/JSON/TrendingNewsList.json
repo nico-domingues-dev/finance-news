@@ -1,0 +1,23 @@
+{
+  "data": [
+    {
+      "id": "000001",
+      "type": "news",
+      "attributes": {
+        "title": "Mock Title"
+      },
+      "relationships": {
+        "author": {
+          "data": {
+            "id": "61831105",
+            "type": "user"
+          }
+        }
+      },
+      "links": {
+        "self": "/news/4458118-over-170-us-companies-expected-to-announce-job-cuts-in-june",
+        "uriImage": "https://static.seekingalpha.com/cdn/s3/uploads/attachment/image/2d12be8c86823948d5587d6548a1a64d.png?io=getty-c-w900"
+      }
+    }
+  ]
+}

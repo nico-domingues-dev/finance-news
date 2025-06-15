@@ -15,7 +15,11 @@ let package = Package(
       name: "FinanceNetwork"),
     .testTarget(
       name: "FinanceNetworkTests",
-      dependencies: ["FinanceNetwork"]
+      dependencies: ["FinanceNetwork"],
+      resources: [
+          .copy("JSON/TrendingNews.json"),
+          .copy("JSON/TrendingNewsList.json"),
+      ]
     ),
   ]
 )

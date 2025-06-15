@@ -4,7 +4,7 @@ import Foundation
 public final class NetworkSession: NetworkSessionProtocol {
   private let session: URLSession
   
-  init(session: URLSession = .shared) {
+  public init(session: URLSession = .shared) {
     
     self.session = session
   }
